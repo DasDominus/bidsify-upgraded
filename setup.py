@@ -9,7 +9,7 @@ with open(ver_file) as f:
     exec(f.read())
 
 # Long description will go up on the pypi page
-with open('README.rst') as f:
+with open('README.rst', 'rb') as f:
     LONG_DESCRIPTION = f.read()
 
 with open('requirements.txt') as f:
